@@ -180,6 +180,10 @@
   color: var(--color-primary);
 }
 
+.tablet-hero-break {
+  display: none;
+}
+
 .hero-description {
   font-family: var(--font-body);
   font-size: 17px;
@@ -285,7 +289,7 @@
 
 .hero-badge-created {
   position: absolute;
-  width: 168px;
+  width: 197px;
   height: 76px;
   left: 410px;
   top: 215px;
@@ -1584,7 +1588,7 @@
 /* --------------------------------------------------------------------------
    8. Responsive Breakpoints
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   /* Navbar: 70px height, logo on left, 2 buttons + hamburger on right */
   .navbar {
     width: 1024px;
@@ -1664,7 +1668,7 @@
     width: 525px;
     max-width: 525px;
     height: 490px;
-    padding: 40px 0px 80px 24px;
+    padding: 40px 0px 80px 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2519,19 +2523,292 @@
     width: 228px;
   }
 }
+@media (max-width: 1190px)  and (min-width: 1025px) {
+  .hero-badge-created {
+    width:187px
+  }
+  .hero-person-img {
+    /* Move the main image slightly left to create room */
+    left: 120px ;
+  }
+   .hero-note-wrapper {
+    /* Adjust right position to pull it away from the center */
+    /* right: 10px !important;  */
+    /* Slightly scale down to save space */
+    transform: scale(0.85);
+    transform-origin: top right;
+  }
+  .hero-visual {
+  overflow: hidden; 
+  position: relative;
+}
+  img.hero-dots-accent {
+  position: absolute;
+  /* Remove the fixed left value */
+  left: auto !important; 
+  /* Align to the right edge with a safe margin */
+  right: 10px; 
+  /* Ensure it doesn't exceed parent width */
+  max-width: 100%; 
+}
+}
+@media (max-width: 1170px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1160px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1150px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1135px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1120px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1110px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1100px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1090px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1080px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1060px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+@media (max-width: 1050px) {
+  .hero-badge-created {
+    width: 186px;
+    left:300px;
+  }
+}
+@media (max-width: 1035px) {
+  .hero-badge-created {
+    width: 186px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   1025px–1280px fluid layout
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .navbar-wrapper,
+  .hero-section,
+  .services-section,
+  .why-choose-section,
+  .reviews-section,
+  .ai-warning-section,
+  .footer-section-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .navbar {
+    width: 100%;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-menu {
+    gap: clamp(8px, 1.25vw, 18px);
+  }
+
+  .nav-link {
+    font-size: clamp(12px, 1.2vw, 16px);
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .nav-actions .btn-why-choose {
+    width: clamp(125px, 13vw, 163px);
+    font-size: clamp(12px, 1.2vw, 15px);
+  }
+
+  .nav-actions .btn-contact {
+    width: clamp(105px, 10.5vw, 124px);
+    font-size: clamp(12px, 1.2vw, 15px);
+  }
+
+  .hero-container {
+    width: 100%;
+    max-width: none;
+    padding-left: 20px;
+    
+  }
+
+  .hero-container > *,
+  .why-choose-container > *,
+  .review-card-container > *,
+  .ai-content-grid > *,
+  .footer-main > * {
+    min-width: 0;
+  }
+
+  
+
+  .hero-visual {
+    min-width: 0;
+    max-width: 52%;
+  }
+
+  .services-section .container,
+  .why-choose-section .container,
+  .reviews-section .container,
+  .ai-warning-section .container,
+  .footer-section-wrapper .container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: none;
+    width: 100%;
+  }
+
+  .service-card,
+  .service-card .card-thumb,
+  .service-card .card-title,
+  .service-card .card-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .why-choose-container {
+    width: 100%;
+    max-width: none;
+    gap: 24px;
+  }
+
+  .steps-list-wrapper,
+  .why-choose-visual {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .steps-list,
+  .step-card,
+  .why-choose-composite-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .step-info {
+    width: auto;
+    max-width: calc(100% - 115px);
+  }
+
+  .review-card-container,
+  .review-content,
+  .outcome-box,
+  .review-body,
+  .review-footer,
+  .ai-content-grid,
+  .ai-collage-wrapper,
+  .ai-composite-img,
+  .ai-features-list,
+  .ai-feature-pill,
+  .cta-banner-container,
+  .footer-main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .review-content {
+    flex: 1 1 auto;
+  }
+
+  .service-card,
+  .step-card,
+  .review-card-container,
+  .ai-feature-pill,
+  .cta-banner-container {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1100px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Hero copy alignment below 1024px */
+@media (max-width: 1023.98px) {
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title {
+    width: min(533px, 100%);
+    text-align: center;
+  }
+
+  .hero-title .desktop-hero-break {
+    display: none;
+  }
+
+  .hero-title .tablet-hero-break {
+    display: block;
+  }
+}
 
 /* --------------------------------------------------------------------------
    768 Home tablet (Figma node 5015:3510)
    Overrides 1024 styles only. Do not change the 1024 / 1280 blocks above.
    -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 1023.98px) {
   /* Navbar: 70px, padding 18px 20px, Contact + hamburger only */
   .navbar-wrapper {
     height: 70px;
   }
 
   .navbar {
-    width: 768px;
+    width: 100%;
     max-width: 100%;
     height: 70px;
     padding: 18px 20px;
@@ -3604,3 +3881,4 @@
     line-height: 32px;
   }
 }
+
