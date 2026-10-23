@@ -155,14 +155,15 @@
   align-items: flex-end;
   justify-content: space-between;
   max-width: var(--max-width);
+  padding-left: 20px;
   margin: 0 auto;
-  padding: 40px 24px 0 24px;
+ 
   min-height: 520px;
 }
 
 .hero-content {
   flex: 1;
-  max-width: 614px;
+  max-width: 488px;
   padding-bottom: 70px;
 }
 
