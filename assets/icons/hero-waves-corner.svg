@@ -1,0 +1,6 @@
+<svg width="220" height="200" viewBox="0 0 220 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft lighter blue wave (curve 1) -->
+  <path d="M0 200C50 170 120 120 190 20C205 3 214 0 220 0V200H0Z" fill="#6EA8F7" opacity="0.85"/>
+  <!-- Vibrant dark royal blue wave (curve 2) -->
+  <path d="M25 200C80 185 140 145 220 65V200H25Z" fill="#176CE9"/>
+</svg>

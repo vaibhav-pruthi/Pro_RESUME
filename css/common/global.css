@@ -1,0 +1,156 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800&family=Quicksand:wght@600;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #176CE9;
+  --color-primary-dark: #0F4596;
+  --color-primary-navy: #0D4494;
+  --color-primary-accent: #1776E9;
+  --color-bg-light: #F3F8FC;
+  --color-bg-blue: #ABD1FC;
+  --color-bg-soft: #CFE4FD;
+  --color-bg-dark: #000205;
+  --color-text-dark: #000000;
+  --color-text-charcoal: #282828;
+  --color-text-muted: #595959;
+  --color-text-subtle: #707070;
+  --color-text-line: #90c767fe;
+  --color-text-light: #D0D0D0;
+  --color-white: #FFFFFF;
+  --color-star: #FFAB00;
+
+  /* Typography */
+  --font-heading: 'Quicksand', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Caveat', cursive;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* Container */
+  --max-width: 1280px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  transition: var(--transition-fast);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Badge Utility */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.section-badge.light-blue {
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+  box-shadow: 0px 0px 14px 0px rgba(23, 108, 233, 0.25);
+}
+
+.section-badge.dark-pill {
+  background: linear-gradient(90deg, rgba(117, 117, 117, 0.8) 0%, rgba(0, 2, 5, 1) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  color: var(--color-white);
+}
+
+.section-badge.navy {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+/* Primary Button Utilities */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 24px;
+  border-radius: 30px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: #1257bd;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(23, 108, 233, 0.35);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 24px;
+  border-radius: 30px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.btn-outline:hover {
+  background-color: rgba(23, 108, 233, 0.08);
+  transform: translateY(-1px);
+}
